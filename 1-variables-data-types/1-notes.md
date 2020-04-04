@@ -83,3 +83,105 @@ var animal = 'hippo';
 animal = null;
 ```
 * typeof before a variable lets you know the data type.
+
+** Basic Maths
+
+We type expressions in the console then the console evaluates the expression.
+
+```javascript
+10 * 10 // when combined like this numbers and operators become an expression
+
+100 // when evaluated that expression produces a number value, here it's 100
+```
+
+```javascript
+var a = 5;
+var b = 7;
+
+var result = (a + b);
+console.log(result);
+
+// returns 12
+```
+JS has a maths library built in
+Math is a built-in object that has properties and methods for mathematical constants and functions.
+
+
+```javascript
+var min = Math.min(3,8,2);
+var max = Math.max(3,8,2,9);
+console.log('Min', min);
+console.log('Max', max);
+
+// Min 2.  min gives us smallest from list of numbers
+// Max 9.  max gives us largest from list of numbers
+```
+
+we can use expressions anywhere we can use values
+
+```javascript
+console.log('Min', Math.min(3, 8, 2));
+console.log('Max', Math.max(3, 8, 2, 9));
+
+// Min 2
+// Max 9
+
+```
+### Return nearest whole number
+ceil (round up) and floor (round down) 
+
+```javascript
+console.log('Ceil 2.2', Math.ceil(2.2));
+console.log('Ceil 3.9', Math.ceil(3.9));
+
+// Ceil 2.2 3
+// Ceil 3.9 4
+```
+
+```javascript
+console.log('Floor 0.9', Math.floor(0.9));
+console.log('Floor 9.9', Math.floor(9.9));
+
+// Floor 0.9 0
+// Floor 9.9 9
+```
+
+### Exercise
+* find smallest number and round down
+* find largest number and round up
+  * 0.9
+  * 4.8
+  * 1.5
+```javascript
+console.log('Min', Math.floor(Math.min(0.9, 4.8, 1.5)));  // 0
+console.log('Max', Math.ceil(Math.max(0.9, 4.8, 1.5)));  // 5
+```
+Instructors answer
+```javascript
+var min = Math.min(0.9, 4.8, 1.5);
+console.log(Math.floor(min));
+
+var max = Math.max(0.9, 4.8, 1.5);
+console.log(Math.ceil(max));
+```
+
+## Math.random() 
+The Math.random() function returns a floating-point, pseudo-random number in the range 0 to less than 1 (inclusive of 0, but not 1) (0 to 0.9999999 etc...) with approximately uniform distribution over that range — which you can then scale to your desired range. The implementation selects the initial seed to the random number generation algorithm; it cannot be chosen or reset by the user.
+
+#### Get a random number between 0 - 10 (0 to 9.9999999999) not inclusive of 10
+we multiply Math.random() * 10
+we will want a whole number rounded down (you don't want 10)
+
+```javascript
+
+var randomNumber = Math.random() * 10;
+console.log(Math.floor(randomNumber));
+
+// or 
+
+console.log(Math.floor(Math.random() * 10));
+
+```
+
+
+
