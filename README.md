@@ -4,17 +4,29 @@
 
 https://wellpaidgeek.teachable.com/
 
-The course is on early release.
 
-Part one is ready and covers:
-
-* Variables
-* Data types
-* String manipulation
-* Maths
-* Functions
+* Variables and data types
+* A quick intro to functions
+* Boolean logic
 * Arrays
-* Closures
-* Scope
+* Debugging
+* Array Functions
+* Functions in depth
+* Scope & closures
 * Objects
 * Classes
+* Context
+* JavaScript in the Browser
+* Listening to events
+* Making webpages dynamic by updating the DOM
+* A pounds to kilos converter app
+* Building modern javascript applications
+* Modules
+* Giphy search introduction
+* Asynchronous programming
+* Completing the giphy search
+
+
+
+
+
